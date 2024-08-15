@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contact me</h1>
+    <fieldset>
+      <legend>Your message</legend>
+      <form method="POST" action="mailto:ashishkamat3@gmail.com?subject=helloworld" enctype="text/plain">
+        <p>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </p>
+        <p>
+            <h4>Select you gender</h3>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </p>
+        <p>
+            <h4>Select your Hobbies</h4>
+            <label for="dance">Dance</label>
+            <input type="checkbox" name="dance" id="dance">
+            <br>
+            <label for="singing">Singing</label>
+            <input type="checkbox" name="singing" id="singing">
+        </p>
+        <p>
+            <h4>Select your country</h4>
+            <select name="country" id="country">
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+            </select>
+        </p>
+        <textarea name="message" id="message" cols="20" rows="10" placeholder="Enter your message"></textarea>
+        <br>
+        <button type="submit">Sumit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
